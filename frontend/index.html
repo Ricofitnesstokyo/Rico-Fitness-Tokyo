@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>VeloParts — Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>VeloParts</h1>
+    <div><button id="open-cart">Panier (<span id="cart-count">0</span>)</button></div>
+  </header>
+  <main>
+    <input id="search" placeholder="Rechercher...">
+    <div id="products" class="grid"></div>
+  </main>
+  <aside id="cart" class="hidden">
+    <h3>Panier</h3>
+    <div id="cart-items"></div>
+    <div><button id="checkout">Payer</button></div>
+  </aside>
+  <script src="app.js"></script>
+</body>
+</html>
