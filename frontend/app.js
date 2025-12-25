@@ -1,6 +1,5 @@
 const API_URL = "https://veloparts-backend.onrender.com/api/products";
 
-
 function renderFallback() {
   document.body.innerHTML = `
     <header style="padding:20px;text-align:center;">
