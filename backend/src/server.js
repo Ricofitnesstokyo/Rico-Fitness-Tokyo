@@ -21,7 +21,13 @@ app.use('/api/stripe', stripeRoutes);
 
 app.get('/ping', (req,res)=>res.json({ok:true}));
 
-const MONGO = process.env.MONGO_URI || 'mongodb://localhost:27017/veloparts';
+const MONGO = process.env.MONGO_URI;
+
+if (!MONGO) {
+  console.error("MONGO_URI is not defined");
+  process.exit(1);
+}
+
 mongoose.connect(MONGO).then(()=> {
   console.log('Mongo connected');
   const PORT = process.env.PORT || 4000;
