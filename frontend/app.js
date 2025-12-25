@@ -1,4 +1,5 @@
-const API_URL = "/api/products";
+const API_URL = "https://veloparts-backend.onrender.com/api/products";
+
 
 function renderFallback() {
   document.body.innerHTML = `
