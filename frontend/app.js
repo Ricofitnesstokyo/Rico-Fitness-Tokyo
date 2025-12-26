@@ -1,3 +1,7 @@
+console.log("app.js chargé");
+alert("app.js chargé");
+
+
 const API_URL = "https://veloparts-backend.onrender.com/api/products";
 
 function renderFallback() {
@@ -58,8 +62,6 @@ fetch(API_URL)
     </footer>
   `;
 })
-
-  })
   .catch(err => {
     console.warn("Backend non disponible → fallback UI", err);
     renderFallback();
