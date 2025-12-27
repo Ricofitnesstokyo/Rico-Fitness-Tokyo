@@ -56,7 +56,7 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const orders = await Order.find()
-      .populate("items.product") // 🔗 lien produit
+      .populate("items.product")
       .sort({ createdAt: -1 });
 
     res.json(orders);
