@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+#cart {
+  position: fixed;
+  right: 16px;
+  top: 70px;
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  z-index: 999;
+}
+
+#cart.hidden { display: none; }
+
+header { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:#fafafa; }
+
+.hidden {
+  display: none;
+}
