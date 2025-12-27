@@ -7,7 +7,7 @@ import authRoutes from './routes/auth.js';
 import magicRoutes from './routes/magic.js';
 import cartRoutes from './routes/cart.js';
 import stripeRoutes from './routes/stripe.js';
-import orderRoutes from "./routes/orders.js";
+import orderRoutes from "../routes/orders.js";
 
 dotenv.config();
 const app = express();
